@@ -19,7 +19,7 @@ function StarRating(props) {
           }} />
         ))}
       </ul>
-      <h2 className="rating-words"></h2>
+      <h2 className="rating-words">{rating > 0 && props.ratingWords[rating - 1]}</h2>
     </div >
 
 
