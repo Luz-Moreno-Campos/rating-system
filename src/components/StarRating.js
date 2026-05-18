@@ -5,8 +5,10 @@ import Star from "./Star";
 function StarRating(props) {
 
   const [rating, setRating] = useState(0);
+
   const starsArray = [0, 1, 2, 3, 4];
 
+  
   const handleClicks = (index) => {
     const clicked = index + 1;
 
@@ -15,7 +17,7 @@ function StarRating(props) {
     } else {
       setRating(clicked);
     }
-    
+
     props.openDialog();
   }
 
