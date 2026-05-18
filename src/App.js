@@ -24,17 +24,15 @@ function App() {
     }, 1300);
   };
 
+  const closeDialog = () => {
+          setShowDialog(false); 
+          setResetKey(prev => prev + 1)
+        }
 
   return (
     <>
       <StarRating StarIcon={FaStar} ratingWords={ratingWords} openDialog={openDialog}   key={resetKey}   />
-      {showDialog && (
-        <Dialog closeDialog={() => {
-          setShowDialog(false); 
-          setResetKey(prev => prev + 1)
-        }} />
-      )}
-
+      {showDialog && (<Dialog closeDialog={closeDialog} />)}
     </>
   );
 }
