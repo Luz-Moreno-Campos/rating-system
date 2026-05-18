@@ -2,18 +2,26 @@ import { useState } from "react";
 import Star from "./Star";
 
 
-function StarRating() {
+function StarRating(props) {
 
   const [rating, setRating] = useState(0);
+  const starsArray = [0, 1, 2, 3, 4];
 
   return (
-    <>
-      <div className="rating-box">
-        <h1>Please, rate our service</h1>
-        <div className="rating-stars"></div>
-        <h2 className="rating-words"></h2>
-      </div>
-    </>
+
+    <div className="rating-container">
+      <h1>Please, rate our service</h1>
+      <ul className="rating-stars">
+        {starsArray.map((value, index) => (
+          <Star key={index} StarIcon={props.StarIcon} rated={index < rating} onClick={() => {
+            setRating(index + 1);
+            props.openDialog();
+          }} />
+        ))}
+      </ul>
+      <h2 className="rating-words"></h2>
+    </div >
+
 
   );
 }

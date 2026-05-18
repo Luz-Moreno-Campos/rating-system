@@ -1,4 +1,4 @@
-import { FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa6";
 import {useState}  from "react";
 import StarRating from "./components/StarRating";
 import Dialog from "./components/Dialog"
