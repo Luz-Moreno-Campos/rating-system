@@ -8,7 +8,7 @@ function StarRating(props) {
 
   const starsArray = [0, 1, 2, 3, 4];
 
-  
+
   const handleClicks = (index) => {
     const clicked = index + 1;
 
