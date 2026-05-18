@@ -13,9 +13,16 @@ function App() {
 
   const [showDialog, setShowDialog] = useState(false);
 
+  const openDialog = () => {
+  setTimeout(() => {
+    setShowDialog(true);
+  }, 1000); 
+};
+
+
   return (
     <>
-      <StarRating StarIcon={FaStar} ratingWords={ratingWords} openDialog={() => setShowDialog(true)} />
+      <StarRating StarIcon={FaStar} ratingWords={ratingWords} openDialog={openDialog} />
       {showDialog && (
         <Dialog closeDialog={() => setShowDialog(false)} />
       )}
