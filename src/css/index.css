@@ -1,0 +1,30 @@
+
+.rating-container {
+  height: 100vh;
+  max-width: 600px;
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center ;
+  align-items: center;
+  font-family: "Poppins", sans-serif
+}
+
+.rating-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.rating-stars {
+  display: flex;
+  list-style:  none;
+  gap:30px;
+  margin-right: 50px;
+}
+
+
+.rating-words {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}

@@ -15,6 +15,7 @@ function StarRating(props) {
     } else {
       setRating(clicked);
     }
+    
     props.openDialog();
   }
 
