@@ -1,9 +1,9 @@
 # ⭐ Customer Feedback Rating Widget
 
-This lightweight, **customer rating widget** allows users to rate a service using a 1–5 star scale and displays a confirmation dialog after submission.  
+This lightweight, **customer rating** widget allows users to rate a service using a 1–5 star scale and displays a confirmation dialog after submission.  
 Designed for seamless integration into modern web applications that require quick, intuitive customer feedback.
 
-##  Features
+## ✨ Features
 
 - **Interactive 1–5 star rating system**
 - **Dynamic feedback label** (e.g., “Good”, “Excellent”)
@@ -36,11 +36,8 @@ To ensure the rating resets cleanly, the widget uses a **dynamic `key`**:
 - React **remounts** the `StarRating` component.
 - All internal state returns to its initial value.
 
-This approach avoids unnecessary complexity and keeps the component predictable and isolated.
-
 ## 🚀 Demo
 
-You can view a live demo here: 
-
+You can view a live demo of our Customer Rating Widget here: https://luz-moreno-campos.github.io/rating-system/
 
 
