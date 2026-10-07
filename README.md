@@ -36,6 +36,10 @@ To ensure the rating resets cleanly, the widget uses a **dynamic `key`**:
 - React **remounts** the `StarRating` component.
 - All internal state returns to its initial value.
 
+## Aplication Screenshot
+
+![Application ScreenShot](ScreenshotRatingSystem.png)
+
 ## 🚀 Demo
 
 You can view a live demo of our Customer Rating Widget here: https://luz-moreno-campos.github.io/rating-system/
